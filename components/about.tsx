@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Instagram, ArrowUpRight, Camera, Phone, Sparkles, Heart, MapPin } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
+import { getAssetPath } from "@/lib/utils";
 
 export function About() {
   return (
@@ -91,7 +92,7 @@ export function About() {
               <div className="flex items-center gap-5 pb-6 border-b border-[#161D15]/8">
                 <div className="relative w-24 h-28 sm:w-28 sm:h-32 rounded-2xl overflow-hidden bg-[#ECEAE1] flex-shrink-0 border-2 border-white shadow-md group">
                   <Image
-                    src="/images/gaurav-more.webp"
+                    src={getAssetPath("/images/gaurav-more.webp")}
                     alt="Gaurav More - Founder & Lead Photographer"
                     fill
                     className="object-cover object-top transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-108 will-change-transform"

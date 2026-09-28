@@ -10,6 +10,8 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
   basePath: isProd ? "/GM_Photography" : "",
+  assetPrefix: isProd ? "/GM_Photography" : "",
+  trailingSlash: true,
   reactStrictMode: true,
   images: {
     unoptimized: true,

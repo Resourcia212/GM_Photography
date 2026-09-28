@@ -1,3 +1,5 @@
+import { getAssetPath } from "@/lib/utils";
+
 export interface GalleryImage {
   id: string;
   src: string;
@@ -13,7 +15,7 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   {
     id: "hero-1",
-    src: "/images/gallery/photo-01.webp",
+    src: getAssetPath("/images/gallery/photo-01.webp"),
     alt: "Editorial bride portrait with delicate styling and jewelry",
     category: "Portraits",
     title: "Golden Hour Glow",
@@ -24,7 +26,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-2",
-    src: "/images/gallery/photo-02.webp",
+    src: getAssetPath("/images/gallery/photo-02.webp"),
     alt: "Ceremonial wedding moment filled with authentic emotion",
     category: "Weddings",
     title: "Sacred Vows",
@@ -35,7 +37,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-3",
-    src: "/images/gallery/photo-03.webp",
+    src: getAssetPath("/images/gallery/photo-03.webp"),
     alt: "Intimate couple portrait with soft natural ambient light",
     category: "Weddings",
     title: "Whispered Promises",
@@ -46,7 +48,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-4",
-    src: "/images/gallery/photo-04.webp",
+    src: getAssetPath("/images/gallery/photo-04.webp"),
     alt: "Joyful traditional wedding ritual and celebration",
     category: "Celebrations",
     title: "Celebration of Colors",
@@ -57,7 +59,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-5",
-    src: "/images/gallery/photo-05.webp",
+    src: getAssetPath("/images/gallery/photo-05.webp"),
     alt: "Candid emotional laugh between bride and groom",
     category: "Candid",
     title: "Pure Joy",
@@ -68,7 +70,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-6",
-    src: "/images/gallery/photo-06.webp",
+    src: getAssetPath("/images/gallery/photo-06.webp"),
     alt: "Cinematic bridal entrance with glowing ambient backdrop",
     category: "Weddings",
     title: "The Grand Entrance",
@@ -79,7 +81,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "hero-7",
-    src: "/images/gallery/photo-07.jpg",
+    src: getAssetPath("/images/gallery/photo-07.jpg"),
     alt: "Classic black and white close-up expression",
     category: "Portraits",
     title: "Monochrome Elegance",
@@ -90,7 +92,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-8",
-    src: "/images/gallery/photo-08.webp",
+    src: getAssetPath("/images/gallery/photo-08.webp"),
     alt: "Delicate bridal ornaments and fine art detail capture",
     category: "Portraits",
     title: "Intricate Details",
@@ -100,7 +102,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-9",
-    src: "/images/gallery/photo-09.webp",
+    src: getAssetPath("/images/gallery/photo-09.webp"),
     alt: "Atmospheric evening reception dance and festivities",
     category: "Celebrations",
     title: "Midnight Rhythms",
@@ -110,7 +112,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-10",
-    src: "/images/gallery/photo-10.webp",
+    src: getAssetPath("/images/gallery/photo-10.webp"),
     alt: "Reflective portrait celebrating timeless grace",
     category: "Portraits",
     title: "Timeless Grace",
@@ -120,7 +122,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-11",
-    src: "/images/gallery/photo-11.webp",
+    src: getAssetPath("/images/gallery/photo-11.webp"),
     alt: "Groom ceremonial preparation and attire showcase",
     category: "Weddings",
     title: "Heritage & Honor",
@@ -130,7 +132,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-12",
-    src: "/images/gallery/photo-12.webp",
+    src: getAssetPath("/images/gallery/photo-12.webp"),
     alt: "Lively family blessings and festive greetings",
     category: "Celebrations",
     title: "Generations Together",
@@ -140,7 +142,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-13",
-    src: "/images/gallery/photo-13.webp",
+    src: getAssetPath("/images/gallery/photo-13.webp"),
     alt: "Soft twilight couple walk amidst natural scenery",
     category: "Candid",
     title: "Twilight Walk",
@@ -150,7 +152,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-14",
-    src: "/images/gallery/photo-14.webp",
+    src: getAssetPath("/images/gallery/photo-14.webp"),
     alt: "Artistic focus on traditional floral garland and hands",
     category: "Weddings",
     title: "Eternal Union",
@@ -160,7 +162,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "gallery-15",
-    src: "/images/gallery/photo-15.jpg",
+    src: getAssetPath("/images/gallery/photo-15.jpg"),
     alt: "Dramatic sunset silhouette capturing romance and depth",
     category: "Candid",
     title: "Golden Hour Silhouette",
@@ -171,3 +173,4 @@ export const galleryImages: GalleryImage[] = [
 ];
 
 export const heroRailImages = galleryImages.slice(0, 8);
+
