@@ -4,12 +4,12 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const isProd = process.env.NODE_ENV === "production";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: isGitHubPages ? "/GM_Photography" : "",
+  basePath: isProd ? "/GM_Photography" : "",
   reactStrictMode: true,
   images: {
     unoptimized: true,
